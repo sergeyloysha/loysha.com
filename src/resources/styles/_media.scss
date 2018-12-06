@@ -1,0 +1,17 @@
+@mixin mobile {
+	@media screen and (min-width: map-get($mq, mobile)) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: map-get($mq, tablet)) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: map-get($mq, desktop)) {
+		@content;
+	}
+}
